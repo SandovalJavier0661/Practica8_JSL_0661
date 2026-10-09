@@ -7,28 +7,40 @@
 </head>
 <style>
 	body {
-      margin: 0;
-      font-family: Comic Sans MS, cursive, sans-serif;
-      background-color: lightgray;
-    }
-    .navbar {
-      background-color: #0056b3;
-      padding: 10px 20px;
-    }
-    .nav-links {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-    }
-    .nav-links a {
-      color: #ffffff;
-    }
-    footer{
-      background-color: #0056b3;
-    }
+		margin: 0;
+		font-family: Comic Sans MS, cursive, sans-serif;
+		background-color: lightgray;
+	}
+	.navbar {
+		background-color: #0056b3;
+		padding: 10px 20px;
+	}
+	.nav-links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+	}
+	.nav-links a {
+		color: #ffffff;
+	}
+	footer {
+		background-color: #0056b3;
+	}
+	.resena-caja {
+		text-align: left;
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-width: 500px;
+	}
+	.usuario-info {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
 </style>
 <body>
   <div style="background-color: black;">
@@ -44,31 +56,61 @@
       <li><a href="#">Vender</a></li>
     </ul>
   </nav>
+  <br>
   <img src="laptop.jpg" alt="laptop" style="display: block; margin: 0 auto;" width="300" height="200">
   <center>
 	<form action="" method="post">
-  Ingresa tu nombre:
-  <input type="text" name="nombre">
-  <br>
-  Ingresa un tu experiencia con el producto:
-  <input type="text" name="reseña">
-  <br>
-  Selecciona la calificación de tu producto:
-  <br>
-  <input type="radio" name="calificación" value="1">1 ☆ <br>
-  <input type="radio" name="calificación" value="2">2 ☆ <br>
-  <input type="radio" name="calificación" value="3">3 ☆ <br>
-  <input type="radio" name="calificación" value="4">4 ☆ <br>
-  <input type="radio" name="calificación" value="5">5 ☆ <br>
-  <input type="submit" value="enviar">
-  <input type="reset" value="borrar">
-  </form>
-  <footer style="color: #ffffff;">
-  <p>HAMASON todos los derechos reservados</p>
-  <p>Sandoval Lugo Javier</p>
-  <p>24308051280661</p>
-  <p>5-I</p>
-  </footer>
+	Ingresa tu nombre:
+	<input type="text" name="nombre">
+	<br><br>
+	Ingresa tu experiencia con el producto:
+	<input type="text" name="reseña">
+	<br><br>
+	Selecciona la calificación de tu producto:
+	<br>
+	<input type="radio" name="calificación" value="1">1 ☆ <br>
+	<input type="radio" name="calificación" value="2">2 ☆ <br>
+	<input type="radio" name="calificación" value="3">3 ☆ <br>
+	<input type="radio" name="calificación" value="4">4 ☆ <br>
+	<input type="radio" name="calificación" value="5">5 ☆ <br><br>
+	<input type="submit" value="enviar">
+	<input type="reset" value="borrar">
+	</form>
+  </center>
+
+  <hr>
+
+  <!-- APARTADO DE RESEÑAS A LA IZQUIERDA -->
+  <div class="resena-caja">
+	<h3>Opiniones de los clientes</h3>
+	
+	<!-- Ejemplo de Reseña 1 -->
+	<div class="usuario-info">
+		<img src="usuario1.jpg" alt="Foto usuario" width="40" height="40" style="border-radius: 50%;">
+		<b>Juan Pérez</b>
+	</div>
+	<p style="color: gold; margin: 5px 0;">★★★★★</p>
+	<p>Excelente laptop, llegó a tiempo y funciona de maravilla para mis tareas.</p>
+	<br>
+
+	<!-- Ejemplo de Reseña 2 -->
+	<div class="usuario-info">
+		<img src="usuario2.jpg" alt="Foto usuario" width="40" height="40" style="border-radius: 50%;">
+		<b>Maria Lopez</b>
+	</div>
+	<p style="color: gold; margin: 5px 0;">★★★★☆</p>
+	<p>Muy buen producto por el precio, aunque la batería dura un poco menos de lo esperado.</p>
+  </div>
+
+  <center>
+	<footer style="color: #ffffff;">
+	<br>
+	<p>HAMASON todos los derechos reservados</p>
+	<p>Sandoval Lugo Javier</p>
+	<p>24308051280661</p>
+	<p>5-I</p>
+	<br>
+	</footer>
   </center>
 </body>
 </html>
